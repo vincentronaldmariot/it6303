@@ -70,5 +70,9 @@ $city_message = $city === "Quezon City"
         <p><?= $sleep_message ?></p>
         <p><?= $city_message ?></p>
     </div>
+    
+    <div style="text-align: center;">
+        <button onclick="history.back()">Go Back</button>
+    </div>
 </body>
 </html>
