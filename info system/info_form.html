@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Information Form</h2>
+        <form action="process_info.php" method="POST">
+            <label for="full_name">Full Name:</label><br>
+            <input type="text" id="full_name" name="full_name" required><br><br>
+
+            <label for="birth_year">Birth Year:</label><br>
+            <input type="number" id="birth_year" name="birth_year" required><br><br>
+
+            <label for="sleep_hours">Sleeping Hours per Day:</label><br>
+            <input type="number" id="sleep_hours" name="sleep_hours" required><br><br>
+
+            <label for="city">City:</label><br>
+            <select id="city" name="city" required>
+                <option value="Manila">Manila</option>
+                <option value="Cebu">Cebu</option>
+                <option value="Davao">Davao</option>
+                <option value="Quezon City">Quezon City</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
